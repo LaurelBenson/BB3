@@ -1,7 +1,8 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Hello I'm a BB"/>
+  <div id ="app">
+    <img class="animated infinite bounce delay-2s" alt="Vue logo" src="./assets/logo.png">
+    <div class="h1">Hello Laurel</div>
+    <HelloWorld msg ="Hey Luca!"/>
   </div>
 </template>
 
@@ -16,13 +17,15 @@ export default {
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="sass">
+@import "css/global.sass"
+
+#app
+  font-family: 'Avenir', Helvetica, Arial, sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  text-align: center
+  color: #2c3e50
+  margin-top: 60px
+
 </style>
