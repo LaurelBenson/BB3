@@ -1,8 +1,9 @@
 <template>
 <div id="container">
       <div id ="app">
-        <img class="animated infinite bounce delay-2s" alt="CRAVE logo" src="../public/Logo@2x.png">
+        <img id="home_logo" class="animated infinite bounce delay-2s" alt="CRAVE logo" src="../public/Logo@2x.png">
         <HelloWorld msg ="Hey Luca!"/>
+        <img id="home_img" src = "../public/HeroImage@3x.png">
       </div>
     </div>
   </template>
@@ -33,9 +34,12 @@
   color: #2c3e50
   margin-top: 60px
   padding: $padding1
+  width: 50vw
+  height: 10vh
+  position:absolute
 
-#app img
-  width: 25vw
+#home_logo
+  width: 250px
 
 
 #container
@@ -47,6 +51,15 @@
     left: 50%
     transform: translate(-50%,-50%)
     padding: $padding1
+
+#home_img
+  width: 40vw
+  position: absolute
+  margin-top: $padding4
+  top:  50%
+  left: 50%
+  transform: translate(-50%,-50%)
+
  
 
 </style>
