@@ -1,21 +1,24 @@
 <template>
-  <div id ="app">
-    <img class="animated infinite bounce delay-2s" alt="Vue logo" src="./assets/logo.png">
-    <div class="luca">Hello Laurel</div>
-    <HelloWorld msg ="Hey Luca!"/>
-  </div>
-</template>
+<div id="container">
+      <div id ="app">
+        <img class="animated infinite bounce delay-2s" alt="CRAVE logo" src="../public/Logo@2x.png">
+        <HelloWorld msg ="Hey Luca!"/>
+      </div>
+    </div>
+  </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+  <script>
+  import HelloWorld from './components/HelloWorld.vue'
 
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
+  export default {
+    name: 'app',
+    components: {
+      HelloWorld
+    }
   }
-}
-</script>
+  </script>
+
+
 
 <style lang="sass">
 @import "css/global.sass"
@@ -29,5 +32,21 @@ export default {
   text-align: center
   color: #2c3e50
   margin-top: 60px
+  padding: $padding1
+
+#app img
+  width: 25vw
+
+
+#container
+    width: 50vw
+    height: 100vh
+    background: $default
+    position: absolute
+    top:  50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    padding: $padding1
+ 
 
 </style>
