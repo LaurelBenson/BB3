@@ -1,6 +1,8 @@
 <template>
 <div id="container">
+      <click-counter></click-counter>
       <div id ="app">
+        <click-counter></click-counter>
         <img id="home_logo" class="animated infinite bounce delay-2s" alt="CRAVE logo" src="../public/Logo@2x.png">
         <HelloWorld msg ="Hey Luca!"/>
         <img id="home_img" src = "../public/HeroImage@3x.png">
