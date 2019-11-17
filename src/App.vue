@@ -1,7 +1,7 @@
 <template>
   <div id ="app">
     <img class="animated infinite bounce delay-2s" alt="Vue logo" src="./assets/logo.png">
-    <div class="h1">Hello Laurel</div>
+    <div class="luca">Hello Laurel</div>
     <HelloWorld msg ="Hey Luca!"/>
   </div>
 </template>
@@ -19,9 +19,11 @@ export default {
 
 <style lang="sass">
 @import "css/global.sass"
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC:900&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Germania+One|Playfair+Display+SC:900&display=swap');
 
 #app
-  font-family: 'Avenir', Helvetica, Arial, sans-serif
+  font-family: 'Montseratt', Helvetica, Arial, sans-serif
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
   text-align: center
