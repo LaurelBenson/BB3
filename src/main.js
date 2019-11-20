@@ -2,17 +2,12 @@ import Vue from 'vue'
 import App from './App.vue'
 import 'animate.css/animate.min.css'
 import router from './router'
+import Message from './Message.vue'
+
+Vue.component('app-message', Message);
 
 Vue.config.productionTip = false
 
-Vue.component("click-counter",{
-  template: "<button @click='count++'>{{count}}</button>",
-  data(){
-    return {
-      count: 0
-    }
-  }
-})
 
 new Vue({
   router,

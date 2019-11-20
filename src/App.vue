@@ -7,6 +7,7 @@
     </div>
     <input type = "text" v-model="title"/>
     <editor v-model="content"></editor>
+    <app-message></app-message>
     <router-view/>
   </div>
 </template>
@@ -14,11 +15,13 @@
 <script>
 
 import Editor from "./components/Editor";
+import Message from "./components/Message";
 
 export default {
   name: "app",
   components: {
-    Editor
+    Editor, 
+    Message
   },
 
   data(){
