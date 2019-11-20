@@ -5,9 +5,30 @@
       <router-link to="/friends">Friends</router-link> |
       <router-link to="/about">About</router-link>
     </div>
+    <input type = "text" v-model="title"/>
+    <editor v-model="content"></editor>
     <router-view/>
   </div>
 </template>
+
+<script>
+
+import Editor from "./components/Editor";
+
+export default {
+  name: "app",
+  components: {
+    Editor
+  },
+
+  data(){
+    return {
+      title: "",
+      content: ""
+    };
+  }
+};
+</script>
 
 <style lang="scss">
 #app {
