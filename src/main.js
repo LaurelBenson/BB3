@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import 'animate.css/animate.min.css'
+import router from './router'
 
 Vue.config.productionTip = false
 
@@ -14,6 +15,6 @@ Vue.component("click-counter",{
 })
 
 new Vue({
-
-  render: h => h(App),
+  router,
+  render: h => h(App)
 }).$mount('#app')
