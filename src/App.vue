@@ -41,8 +41,8 @@ export default {
 
 #nav {
   padding: 30px;
-
-  background-color: lightsalmon;
+  background-image: url("https://media.giphy.com/media/h6rLCQyYdUCqNphj77/giphy.gif");
+  background-size:contain;
 
   a {
     font-weight: bold;
